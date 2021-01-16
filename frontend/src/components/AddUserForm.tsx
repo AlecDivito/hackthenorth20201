@@ -34,7 +34,6 @@ export const AddUserForm: React.FC = () => {
                     />
                 </div>
                 <div className='custom-control custom-switch'>
-                    <h2>Your toggle is {isToggled.toString()} 🥳</h2>
                     <input
                     type='checkbox'
                     className='custom-control-input'
