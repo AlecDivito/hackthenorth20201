@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { AddUserForm } from './components/AddUserForm';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
+import { HomeForm } from './components/HomeForm';
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
         </Route>
         <Route path='/home'>
           <Sidebar />
-          <div>
-            Home
-          </div>
+          <HomeForm />
         </Route>
         <Route path='/browse'>
           <Sidebar />
