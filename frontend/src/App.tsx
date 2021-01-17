@@ -27,7 +27,7 @@ function App() {
             Your Friends
           </div>
         </Route>
-        <Route path='/player'>
+        <Route path='/now_playing'>
           <Sidebar />
           <ReactHlsPlayer
             url='http://localhost:3000/stream/music_angela_paulson_dancing_waters_007.m3u8'
