@@ -1,14 +1,16 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
-
+import { Menu, Search, Users } from 'react-feather';
 
 export const Sidebar: React.FC = () => {
     return (
-        <div>
+        <div className="menu">
+            <div className="menu-background"></div>
             <Nav className="flex-column">
                 <NavLink
                     to="/home"
+                    className="mb-3 mt-2"
                     style={{
                         color: "white"
                     }}
@@ -16,10 +18,11 @@ export const Sidebar: React.FC = () => {
                         fontWeight: "bold"
                     }}
                 >
-                    Home
+                    <Search className="icons" /> Search
                 </NavLink>
                 <NavLink
                     to="/browse"
+                    className="mb-3"
                     style={{
                         color: "white"
                     }}
@@ -27,10 +30,11 @@ export const Sidebar: React.FC = () => {
                         fontWeight: "bold"
                     }}
                 >
-                    Browse
+                    <Menu className="icons" /> Browse
                 </NavLink>
                 <NavLink
                     to="/friends"
+                    className="mb-2"
                     style={{
                         color: "white"
                     }}
@@ -38,7 +42,7 @@ export const Sidebar: React.FC = () => {
                         fontWeight: "bold"
                     }}
                 >
-                    Friends
+                    <Users className="icons" /> Friends
                 </NavLink>
             </Nav>
             

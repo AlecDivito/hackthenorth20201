@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components';
+import logo from '../images/logo_white.png'
 
 interface Props {
     addUser: AddUser;
@@ -34,6 +35,7 @@ export const AddUserForm: React.FC = () => {
     return (
         <div className="form-container text-center">
             <form>
+                <img src={logo} alt="Logo" className="small-logo" />
                 <h5 className="mb-3">Welcome to Aurras 👋</h5>
                 <h1>What's your name?</h1>
                 <div>

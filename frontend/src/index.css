@@ -32,7 +32,7 @@ input:focus {
 }
 
 .home-container {
-  margin-top: -1rem;
+  margin-top: -5rem;
 }
 
 .custom-switch {
@@ -43,4 +43,25 @@ input:focus {
   width: 175px;
   margin-top: 2rem;
   height: 3rem;
+}
+
+.menu {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  background-color: rgba(256, 256, 256, 0.25);
+  padding: 15px;
+  width: 9rem;
+}
+
+.icons {
+  margin-left: .5rem;
+  margin-right: 1rem;
+  margin-top: -3px;
+}
+
+.small-logo {
+  width: 6%;
+  height: 2%;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
 }
