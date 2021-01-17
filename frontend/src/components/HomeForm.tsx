@@ -30,7 +30,7 @@ export const HomeForm: React.FC = () => {
                     {/* buttons for emotions */}
                     {emotions.map((emotion) => (
                         <Button
-                        variant="outline-dark"
+                        variant="outline-light"
                         as="input" 
                         type="button"
                         className="mr-2"

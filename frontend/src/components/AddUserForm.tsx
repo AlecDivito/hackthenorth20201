@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import styled from 'styled-components';
 
 interface Props {
     addUser: AddUser;
 }
+
+const Input = styled.input`
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  color: white;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+  width: 600px;
+  font-size: 35px;
+`;
 
 const addUser: AddUser = (name: string, location: boolean) => {
     const newUser = { name, location };
@@ -20,12 +32,13 @@ export const AddUserForm: React.FC = () => {
     const disabled = !name?.trim().length;
 
     return (
-        <>
+        <div className="form-container text-center">
             <form>
-                <h5>Welcome to Aurras 👋</h5>
+                <h5 className="mb-3">Welcome to Aurras 👋</h5>
                 <h1>What's your name?</h1>
                 <div>
-                    <input
+                    <Input
+                        className="text-center"
                         type="text"
                         value={name}
                         onChange={e => {
@@ -47,6 +60,7 @@ export const AddUserForm: React.FC = () => {
                 </div>
                 <div>
                     <Button 
+                        className="enterBtn"
                         variant="secondary"
                         as="input" 
                         type="submit" 
@@ -60,7 +74,7 @@ export const AddUserForm: React.FC = () => {
                     />
                 </div>
             </form>
-        </>
+        </div>
         
     );
 };

@@ -18,3 +18,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input:focus {
+  border: 0;
+  box-shadow: 0;
+  outline-offset: 0px;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.form-container {
+  margin-top: 9rem;
+}
+
+.custom-switch {
+  margin-top: 3rem;
+}
+
+.enterBtn {
+  width: 175px;
+  margin-top: 2rem;
+  height: 3rem;
+}

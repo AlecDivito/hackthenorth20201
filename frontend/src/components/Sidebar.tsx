@@ -9,27 +9,33 @@ export const Sidebar: React.FC = () => {
             <Nav className="flex-column">
                 <NavLink
                     to="/home"
+                    style={{
+                        color: "white"
+                    }}
                     activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
+                        fontWeight: "bold"
                     }}
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/browse"
+                    style={{
+                        color: "white"
+                    }}
                     activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
+                        fontWeight: "bold"
                     }}
                 >
                     Browse
                 </NavLink>
                 <NavLink
                     to="/friends"
+                    style={{
+                        color: "white"
+                    }}
                     activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
+                        fontWeight: "bold"
                     }}
                 >
                     Friends
