@@ -31,6 +31,10 @@ input:focus {
   margin-top: 9rem;
 }
 
+.home-container {
+  margin-top: -1rem;
+}
+
 .custom-switch {
   margin-top: 3rem;
 }

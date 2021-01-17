@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import styled from 'styled-components';
 
 const emotions = [
     { label: 'Happy'},
@@ -9,16 +10,29 @@ const emotions = [
     { label: '+'}
 ];
 
+const Input = styled.input`
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  color: white;
+  box-shadow: none;
+  border-bottom: 1px solid white;
+  width: 550px;
+  font-size: 35px;
+  margin-top: -1rem;
+`;
+
 export const HomeForm: React.FC = () => {
     const [text, setText] = useState('');
 
     return (
-        <>
+        <div className="home-container text-center">
             <form>
-                <h5>Welcome to Aurras 👋</h5>
-                <h1>How do you <b>want</b> to feel, ____?</h1>
+                <h5 className="mb-2">Welcome to Aurras 👋</h5>
+                <h1>How do you <strong>want</strong> to feel, ____?</h1>
                 <div>
-                    <input
+                    <Input
+                        className="text-center"
                         type="text"
                         value={text}
                         onChange={e => {
@@ -26,14 +40,14 @@ export const HomeForm: React.FC = () => {
                         }}
                     />
                 </div>
-                <div>
+                <div className="mt-4">
                     {/* buttons for emotions */}
                     {emotions.map((emotion) => (
                         <Button
                         variant="outline-light"
                         as="input" 
                         type="button"
-                        className="mr-2"
+                        className="mr-2 ml-2 pl-4 pr-4"
                         value={emotion.label} 
                         onClick={e => {
                         e.preventDefault();
@@ -43,7 +57,7 @@ export const HomeForm: React.FC = () => {
                     
                 </div>
             </form>
-        </>
+        </div>
         
     );
 };
