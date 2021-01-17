@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import styled from 'styled-components';
+import globe from '../images/globe-home.png';
 
 const emotions = [
     { label: 'Happy'},
@@ -11,7 +12,7 @@ const emotions = [
 ];
 
 const Input = styled.input`
-  padding: 0.5em;
+  padding: 0.25em;
   background: transparent;
   border: 0;
   color: white;
@@ -57,6 +58,9 @@ export const HomeForm: React.FC = () => {
                     
                 </div>
             </form>
+            <div>
+                <img src={globe} alt="Globe" className="globe" />
+            </div>
         </div>
         
     );

@@ -32,7 +32,7 @@ input:focus {
 }
 
 .home-container {
-  margin-top: -5rem;
+  margin-top: -7rem;
 }
 
 .custom-switch {
@@ -91,4 +91,10 @@ input:focus {
   text-align: center;
   font-weight: bold;
   font-size: 32px;
+}
+
+.globe {
+  margin-top: 2rem;
+  height: 50%;
+  width: 50%;
 }
