@@ -3,6 +3,7 @@ import { AddUserForm } from './components/AddUserForm';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Sidebar } from './components/Sidebar';
 import { HomeForm } from './components/HomeForm';
+import { Browse } from './components/Browse';
 import ReactHlsPlayer from 'react-hls-player';
 
 function App() {
@@ -18,13 +19,11 @@ function App() {
         </Route>
         <Route path='/browse'>
           <Sidebar />
-          <div>
-            Browse Soundscapes
-          </div>
+          <Browse />
         </Route>
         <Route path='/friends'>
           <Sidebar />
-          <div>
+          <div className="friends">
             Your Friends
           </div>
         </Route>
